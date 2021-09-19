@@ -206,7 +206,62 @@ body {
     margin-top: 60px;
     background: url(../../images/planets-images/mecury/mecury-header.jpg)no-repeat center / cover;
     height: 100vh;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content-venus{
+  margin-top: 60px;
+    background: url(../../images/planets-images/venus/BG-2148898.jpg)no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content-earth{
+  margin-top: 60px;
+    background: url(../../images/planets-images/earth/5521099.jpg)no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content-mars{
+  margin-top: 60px;
+    background: url(../../images/planets-images/mars/mars-nd.png)no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content-jupiter{
+  margin-top: 60px;
+    background: url(../../images/planets-images/jupiter/jupiter-superJumbo.jpg)no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content-saturn{
+  margin-top: 60px;
+    background: url(../../images/planets-images/saturn/6146c3ec5b3a1.jpg)no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content-uranus{
+  margin-top: 60px;
+    background: url(../../images/planets-images/uranus/headBG.jpg)no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content-neptune{
+  margin-top: 60px;
+    background: url(../../images/planets-images/neptune/headBG.jpg)no-repeat center / cover;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,6 +275,9 @@ body {
 }
 .name_planet{
     text-align: center;
+}
+.name_planet h1{
+  color: #fff; font-family: 'Righteous', cursive; font-size: 65px; font-weight: normal; line-height: 60px; margin: 10px 0 20px; text-transform: uppercase; text-shadow: 2px 2px 0 #000, margin: 10px 0 24px; text-align: center;
 }
 .header_item p{
     text-align: center;
@@ -242,7 +300,7 @@ body {
    padding-left: 5px;
    font-size: 25px;
  }
-.textwidget{
+.textwidget {
    font-size: 18px;
  }
  .column-1 {
@@ -264,6 +322,7 @@ body {
   padding: 70px 0;
 }
 .facts2_list li{
+  padding: 5px 0;
 }
 /*YOUTUBE*/
 .wy {
@@ -385,9 +444,14 @@ body {
 .inner,.outer{
   margin-top: 45px;
 }
-.slider,.other-slider a{
+.slider a{
   text-decoration: none;
   color: #fff;
 }
+.other-slider a{
+  text-decoration: none;
+  color: #fff;
+}
+
 
 
