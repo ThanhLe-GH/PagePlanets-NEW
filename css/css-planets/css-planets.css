@@ -257,8 +257,69 @@ body {
 }
 
 
+.title-decoration {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 240px;
+}
+.title-decoration::before,
+.title-decoration::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  display: block;
+  height: 3px;
+  width: 100px;
+  background: linear-gradient(to right, #f72585 30%, #fdbb2d);
+}
+.title-decoration::after {
+  right: 0;
+}
+.title-decoration img {
+  display: block;
+  margin: auto;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  color: white;
+}
+
+.astro-mark {
+  background: -webkit-linear-gradient(0deg, #f72585 30%, #4361ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Superstar X";
+}
+.astro-mark-1 {
+  background: -webkit-linear-gradient(100deg, #f72585 30%, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Righteous", cursive;
+}
+.astro-mark-link {
+  background: -webkit-linear-gradient(100deg, #f72585 30%, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.astro-mark-link:hover {
+  transform: scale(1.1);
+  background: -webkit-linear-gradient(0deg, #1d976c 30%, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.astro-mark-link-1 {
+  background: -webkit-linear-gradient(0deg, #4cc9f0 30%, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 /* CONTENT */
-.header_content{
+.header_content, .header_content-venus, .header_content-earth,.header_content-mars, .header_content-jupiter, .header_content-saturn,
+ .header_content-uranus, .header_content-neptune,{
     margin-top: 60px;
     background: url(../../images/planets-images/mecury/mecury-header.jpg)no-repeat center / cover;
     height: 100vh;
@@ -267,61 +328,27 @@ body {
     justify-content: center;
 }
 .header_content-venus{
-  margin-top: 60px;
     background: url(../../images/planets-images/venus/BG-2148898.jpg)no-repeat center / cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header_content-earth{
-  margin-top: 60px;
     background: url(../../images/planets-images/earth/5521099.jpg)no-repeat center / cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header_content-mars{
-  margin-top: 60px;
     background: url(../../images/planets-images/mars/mars-nd.png)no-repeat center / cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header_content-jupiter{
-  margin-top: 60px;
     background: url(../../images/planets-images/jupiter/jupiter-superJumbo.jpg)no-repeat center / cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header_content-saturn{
-  margin-top: 60px;
     background: url(../../images/planets-images/saturn/6146c3ec5b3a1.jpg)no-repeat center / cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header_content-uranus{
-  margin-top: 60px;
     background: url(../../images/planets-images/uranus/headBG.jpg)no-repeat center / cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .header_content-neptune{
-  margin-top: 60px;
     background: url(../../images/planets-images/neptune/headBG.jpg)no-repeat center / cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 .header_item{
     display: flex;
     flex-direction: column;
@@ -350,8 +377,12 @@ body {
 
 
  .widget_header{
-   border-left: 10px #2fa4e7 solid;
-   color: #2fa4e7 ;
+  background: -webkit-linear-gradient(0deg, #f72585 , #4361ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Righteous", cursive;
+   border-left: 10px #4361ee solid;
+  
    font-weight: 500;
    padding-left: 5px;
    font-size: 25px;
@@ -361,7 +392,8 @@ body {
  }
  .column-1 {
    vertical-align: top;
-   padding: 7px;
+   padding: 9px;
+   color: #6c97ff ;
  }
  .column-2{
    padding: 7px;
@@ -380,6 +412,17 @@ body {
 }
 .facts2_list li{
   padding: 5px 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+ul li:before {
+  color:#f72585;
+  float: left;
+  margin: 0 0 0 -1em;
+  width: 1em;
+  content: '\2022';
 }
 /*YOUTUBE*/
 .wy {
@@ -409,6 +452,7 @@ body {
 }
 .facts3{
   margin-top: 50px;
+  
 }
 .facts3 img{
   align-items: center;
@@ -453,12 +497,15 @@ body {
 
 
 .facts5{
+  
   margin-top: 50px;
   font-size: 19px;
+  
 }
 .facts5-card {
  margin-left: 10%;
  margin-right: 15%;
+ margin-top: 30px;
 }
 .facts5-h1{
   margin-top: 20px;
@@ -503,7 +550,9 @@ body {
     margin-left: 0;
     margin-right: 0;
    }
-
+   .card-select img{
+    width: 200px;
+  }
 }
 @media screen and (max-width:767px){
   .wy{
@@ -541,6 +590,17 @@ body {
 
     transform: rotate(0);
   }
+  .card-select img{
+    width: 100px;
+  }
+  .planets-select h3{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:580px){
+  .slick-arrow{
+    display: none;
+  }
 }
 /* END CONTENT */
 
@@ -552,7 +612,17 @@ body {
 .wrap{
   text-align: center;
 }
+.slider{
+  margin: 0;
+}
 .planets-select h2{
+  text-align: center;
+}
+.card-select{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .card-select img{
@@ -562,7 +632,7 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-.inner,.outer{
+.inner,.outer,.other{
   margin-top: 45px;
 }
 .slider a{
@@ -572,6 +642,11 @@ body {
 .other-slider a{
   text-decoration: none;
   color: #fff;
+}
+
+.comets img{
+  border-radius: 50%;
+  border:2px solid #fff;
 }
 
 .btn-gradient {
@@ -653,14 +728,14 @@ body {
   }
 }
 
-
 /* FOOTER */
 #footer {
-  background: url(../images/footer-bg.jpeg);
+  background: url(../../images/footer-bg.jpeg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 .logo-footer img {
   width: 200px;
