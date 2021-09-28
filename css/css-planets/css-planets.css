@@ -319,7 +319,7 @@ body {
 
 /* CONTENT */
 .header_content, .header_content-venus, .header_content-earth,.header_content-mars, .header_content-jupiter, .header_content-saturn,
- .header_content-uranus, .header_content-neptune,{
+ .header_content-uranus, .header_content-neptune{
     margin-top: 60px;
     background: url(../../images/planets-images/mecury/mecury-header.jpg)no-repeat center / cover;
     height: 100vh;
@@ -410,14 +410,13 @@ body {
 .facts2_list{
   padding: 70px 0;
 }
-.facts2_list li{
+.facts2_list ul li{
   padding: 5px 0;
-}
-ul li {
   list-style-type: none;
 }
 
-ul li:before {
+
+.facts2_list ul li:before {
   color:#f72585;
   float: left;
   margin: 0 0 0 -1em;
